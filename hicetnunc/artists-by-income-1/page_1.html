@@ -1,0 +1,1752 @@
+<head><title>Artists rating (hicetnunc.xyz)</title>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@pallada92">
+        <meta name="twitter:title" content="Top-100 hicetnunc.xyz artists by income">
+        <meta name="twitter:description" content="Based on data from Tezos blockchain and IPFS">
+        <meta name="twitter:image" content="https://hashquine.github.io/hicetnunc/twitter_preview.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K4ZXSKTS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0K4ZXSKTS8');
+</script>
+</head><body style="margin: 0px auto; padding: 0px 20px; max-width: 1200px"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script><a class="github-fork-ribbon" href="https://github.com/hashquine/hicetnunc-dataset/blob/master/jupyter/output_html/artist_rating_by_income.ipynb" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a><table class="ui celled striped table" style="margin-bottom: 50px"><thead><tr><th colspan="3">Hicetnunc open dataset and parsers: <a href="https://github.com/hashquine/hicetnunc-dataset" target="_blank">https://github.com/hashquine/hicetnunc-dataset</a></th></tr></thead><tbody><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.csv" target="_blank">addrs.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.json" target="_blank">addrs.json</a></td><td class=""><i class="table icon"></i> All hicetnunc users with tzkt.io metadata and aggregated prices indicators</td><td class="right aligned collapsing"> 1.31 Mb<br/> 6.57 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.csv" target="_blank">tokens.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.json" target="_blank">tokens.json</a></td><td class=""><i class="table icon"></i> All hicetnunc objkts and aggregated prices indicators</td><td class="right aligned collapsing">13.61 Mb<br/>37.49 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.csv" target="_blank">sells.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.json" target="_blank">sells.json</a></td><td class=""><i class="table icon"></i> Every sell event on hicetnunc website</td><td class="right aligned collapsing">18.67 Mb<br/>35.02 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.csv" target="_blank">swaps.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.json" target="_blank">swaps.json</a></td><td class=""><i class="table icon"></i> All hicetnunc swaps that ever existed</td><td class="right aligned collapsing"> 5.59 Mb<br/>14.45 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.csv" target="_blank">transfers.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.json" target="_blank">transfers.json</a></td><td class=""><i class="table icon"></i> All hicetnunc token transfers including external services like quipuswap</td><td class="right aligned collapsing">27.80 Mb<br/>49.78 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/token_thumbs" target="_blank">token_thumbs</a></td><td class=""><i class="folder open outline icon"></i> Previews for some hicetnunc tokens exluding interactive ones</td><td class="right aligned collapsing"></td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/user_logos" target="_blank">user_logos</a></td><td class=""><i class="folder open outline icon"></i> Logos of some users taken from tzkt.io</td><td class="right aligned collapsing"></td></tr></tbody></table><h1>Unofficial <a href="https://hicetnunc.xyz/" target="_blank">hicetnunc.xyz</a> artists rating by total value of sold <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank">NFT</a>s (in <a href="https://en.wikipedia.org/wiki/Tezos" target="_blank">Tezos</a>)</h1><p align="left">Project by&nbsp; <a href="https://twitter.com/HashQuine" target="_blank"><i class="twitter icon"></i>HashQuine</a>. Based on data from Tezos blockchain (by <a href="https://tzstats.com/docs/api" target="_blank">TzStats API</a>), IPFS and <a href="http://tzkt.io/">tzkt.io</a> accounts metadata API. No requests to hicetnunc.xyz were sent during making this rating.</p><p align="right">Last updated April 7, 2021 20:00 UTC</p><div class="ui three item pointing menu"><a class="item active" style="" href="./../artists-by-income-1/index.html">March 1 &ndash; 15</a><a class="item" style="" href="./../artists-by-income-2/index.html">March 15 &ndash; 31</a><a class="item" style="" href="./../artists-by-income-3/index.html">April 1 &ndash; 7</a></div><div class="ui ten item pointing menu"><a class="item" style="" href="./index.html">1&ndash;10</a><a class="item active" style="" href="./page_1.html">11&ndash;20</a><a class="item" style="" href="./page_2.html">21&ndash;30</a><a class="item" style="" href="./page_3.html">31&ndash;40</a><a class="item" style="" href="./page_4.html">41&ndash;50</a><a class="item" style="" href="./page_5.html">51&ndash;60</a><a class="item" style="" href="./page_6.html">61&ndash;70</a><a class="item" style="" href="./page_7.html">71&ndash;80</a><a class="item" style="" href="./page_8.html">81&ndash;90</a><a class="item" style="" href="./page_9.html">91&ndash;100</a></div>
+        <div class="ui icon message" style="padding-bottom: 0; margin-bottom: 0px">
+          <i class="exclamation triangle icon"></i>
+          <div class="content">
+            <div class="header">
+              Word of caution:
+            </div>
+            <ul>
+                <li>
+                    We haven't validated, that the artists accounts presented here are really owned by the artists themselves.
+                    Please double check before purchasing.
+                </li>
+                <li>
+                    These metrics can be easily cheated by artists creating transactions between fake accounts.
+                    Do not rely on this data alone!
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui divider"></div><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-10"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3059" target="_blank">
+          <img src="../token_thumbs/3059.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3059" target="_blank" class="header">
+            Three Women
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          "Three Women" by MAIKEUL.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1100.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-10" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-10" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#11</div> MAIKEUL</h1><a href="https://twitter.com/MaikeulMaikeul" target="_blank"><i class="twitter icon"></i>MaikeulMaikeul</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1fP1xrV55sqTV3zfdxvYpqbLcE92GAZbnR" target="_blank"><i class="circle outline icon"></i> tz1fP1xrV55sqTV3zfdxvYpqbLcE92GAZbnR</a></div><div class="ui horizontal statistic"><div class="value">962 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-10").sticky({context: "#sticky-parent-10"});$(".progress-10").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-11"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/200" target="_blank">
+          <img src="../token_thumbs/200.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/200" target="_blank" class="header">
+            The Origin of all light
+        </a>
+        <div class="meta">
+          <span class="date">March 01, 2021</span>
+        </div>
+        <div class="description">
+          Tesla's Coil on Tezos bringing inspirational light at 100BPM
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-11" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/4074" target="_blank">
+          <img src="../token_thumbs/4074.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4074" target="_blank" class="header">
+            Dirt Beat 1
+        </a>
+        <div class="meta">
+          <span class="date">March 11, 2021</span>
+        </div>
+        <div class="description">
+          Leaving your beat in the dirt. Eclectic Method's pulsating light infinite loop sees some reoccuring characters set to dark repeating beat.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 29 &times; 33.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-11" data-percent="87">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-11" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#12</div> Eclectic Method</h1><a href="https://twitter.com/eclecticmethod" target="_blank"><i class="twitter icon"></i>eclecticmethod</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz2K5UyvaMuNgiy5Zy8yVspTW6oXmchGvSey" target="_blank"><i class="circle outline icon"></i> tz2K5UyvaMuNgiy5Zy8yVspTW6oXmchGvSey</a></div><div class="ui horizontal statistic"><div class="value">838 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-11").sticky({context: "#sticky-parent-11"});$(".progress-11").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-12"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/2371" target="_blank">
+          <img src="../token_thumbs/2371.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2371" target="_blank" class="header">
+            Window Still Life 001
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          .gif by john karel @jjjjjjjjjjohn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/2923" target="_blank">
+          <img src="../token_thumbs/2923.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2923" target="_blank" class="header">
+            Window Still Life 002
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          .gif by John Karel @jjjjjjjjjjohn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/3852" target="_blank">
+          <img src="../token_thumbs/3852.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3852" target="_blank" class="header">
+            Window Still Life 003
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          .gif by John Karel @jjjjjjjjjjohn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/4541" target="_blank">
+          <img src="../token_thumbs/4541.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4541" target="_blank" class="header">
+            Window Still Life 004
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          .gif by John Karel @jjjjjjjjjjohn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="83">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/4993" target="_blank">
+          <img src="../token_thumbs/4993.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4993" target="_blank" class="header">
+            Window Still Life 005
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          .gif by John Karel @jjjjjjjjjjohn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/5765" target="_blank">
+          <img src="../token_thumbs/5765.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5765" target="_blank" class="header">
+            Window Still Life 006
+        </a>
+        <div class="meta">
+          <span class="date">March 14, 2021</span>
+        </div>
+        <div class="description">
+          .mp4 by john karel @johnnnnnnnnnn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="83">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/6110" target="_blank">
+          <img src="../token_thumbs/6110.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/6110" target="_blank" class="header">
+            Window Still Life 007
+        </a>
+        <div class="meta">
+          <span class="date">March 14, 2021</span>
+        </div>
+        <div class="description">
+          .gif by john karel @johnnnnnnnnnn
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 25 &times; 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-12" data-percent="86">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-12" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#13</div> John Karel</h1><a href="https://twitter.com/jjjjjjjjjjohn" target="_blank"><i class="twitter icon"></i>jjjjjjjjjjohn</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1gqaKjfQBhUMCE6LhbkpuittRiWv5Z6w38" target="_blank"><i class="circle outline icon"></i> tz1gqaKjfQBhUMCE6LhbkpuittRiWv5Z6w38</a></div><div class="ui horizontal statistic"><div class="value">765 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-12").sticky({context: "#sticky-parent-12"});$(".progress-12").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-13"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/2235" target="_blank">
+          <img src="../token_thumbs/2235.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2235" target="_blank" class="header">
+            Glenz Vector 2020
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          https://mrdoob.neocities.org/035/
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 100 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-13" data-percent="94">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/3432" target="_blank">
+          <img src="../token_thumbs/3432.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3432" target="_blank" class="header">
+            Nested Tori 2015 (Rework)
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          https://mrdoob.neocities.org/038/
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 99 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-13" data-percent="95">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="cube icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/4506" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4506" target="_blank" class="header">
+            Ink Test
+        </a>
+        <div class="meta">
+          <span class="date">March 11, 2021</span>
+        </div>
+        <div class="description">
+          Kids have it so easy with Blender these days... :)
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 77 &times; 7.69Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-13" data-percent="78">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="cube icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/4924" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4924" target="_blank" class="header">
+            Blender Default Cube
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          
+        </div>
+      </div>
+      <div class="extra content">
+         Nothing sold, not available for sale
+      </div>
+      <div class="ui bottom attached warning progress progress-13" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/5102" target="_blank">
+          <img src="../token_thumbs/5102.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5102" target="_blank" class="header">
+            Twister 2020
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          https://mrdoob.neocities.org/036/
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 35 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-13" data-percent="35">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/5257" target="_blank">
+          <img src="../token_thumbs/5257.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5257" target="_blank" class="header">
+            Torus Blob
+        </a>
+        <div class="meta">
+          <span class="date">March 13, 2021</span>
+        </div>
+        <div class="description">
+          https://mrdoob.neocities.org/034/
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 35 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-13" data-percent="35">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-13" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#14</div> Mr.doob</h1><a href="https://twitter.com/mrdoob" target="_blank"><i class="twitter icon"></i>mrdoob</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1UAY5RSuG6nRJhdHDVMVSg9Lt2pSZez5JR" target="_blank"><i class="circle outline icon"></i> tz1UAY5RSuG6nRJhdHDVMVSg9Lt2pSZez5JR</a></div><div class="ui horizontal statistic"><div class="value">753 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-13").sticky({context: "#sticky-parent-13"});$(".progress-13").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-14"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/198" target="_blank">
+          <img src="../token_thumbs/198.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/198" target="_blank" class="header">
+            Nightcall
+        </a>
+        <div class="meta">
+          <span class="date">March 01, 2021</span>
+        </div>
+        <div class="description">
+          Acrylic on canvas GIF'd
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/226" target="_blank">
+          <img src="../token_thumbs/226.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/226" target="_blank" class="header">
+            Flowers
+        </a>
+        <div class="meta">
+          <span class="date">March 02, 2021</span>
+        </div>
+        <div class="description">
+          Film 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 30.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-14" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/807" target="_blank">
+          <img src="../token_thumbs/807.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/807" target="_blank" class="header">
+            Onion Knight
+        </a>
+        <div class="meta">
+          <span class="date">March 05, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/817" target="_blank">
+          <img src="../token_thumbs/817.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/817" target="_blank" class="header">
+            Lethal Devotion Fade
+        </a>
+        <div class="meta">
+          <span class="date">March 05, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 30.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/855" target="_blank">
+          <img src="../token_thumbs/855.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/855" target="_blank" class="header">
+            Sailors
+        </a>
+        <div class="meta">
+          <span class="date">March 05, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1146" target="_blank">
+          <img src="../token_thumbs/1146.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1146" target="_blank" class="header">
+            The Universe
+        </a>
+        <div class="meta">
+          <span class="date">March 06, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt. Enjoy my work. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1660" target="_blank">
+          <img src="../token_thumbs/1660.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1660" target="_blank" class="header">
+            Eden
+        </a>
+        <div class="meta">
+          <span class="date">March 07, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 30.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2158" target="_blank">
+          <img src="../token_thumbs/2158.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2158" target="_blank" class="header">
+            Nightmares And Dreams
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2847" target="_blank">
+          <img src="../token_thumbs/2847.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2847" target="_blank" class="header">
+            Minerva
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2892" target="_blank">
+          <img src="../token_thumbs/2892.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2892" target="_blank" class="header">
+            Sir Smokes A lot
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt. Enjoy my work. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 40.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2911" target="_blank">
+          <img src="../token_thumbs/2911.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2911" target="_blank" class="header">
+            Ad Astra Per Aspera
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3654" target="_blank">
+          <img src="../token_thumbs/3654.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3654" target="_blank" class="header">
+            Hollow Ocean
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3787" target="_blank">
+          <img src="../token_thumbs/3787.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3787" target="_blank" class="header">
+            Magdalene
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 40.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/4276" target="_blank">
+          <img src="../token_thumbs/4276.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4276" target="_blank" class="header">
+            Pendragon
+        </a>
+        <div class="meta">
+          <span class="date">March 11, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 35.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/4345" target="_blank">
+          <img src="../token_thumbs/4345.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4345" target="_blank" class="header">
+            Luna
+        </a>
+        <div class="meta">
+          <span class="date">March 11, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 40.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-14" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/4403" target="_blank">
+          <img src="../token_thumbs/4403.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4403" target="_blank" class="header">
+            Warm Nights
+        </a>
+        <div class="meta">
+          <span class="date">March 11, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 70.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/4851" target="_blank">
+          <img src="../token_thumbs/4851.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4851" target="_blank" class="header">
+            Peonie
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          @existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 15.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-14" data-percent="66">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/5493" target="_blank">
+          <img src="../token_thumbs/5493.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5493" target="_blank" class="header">
+            Dog
+        </a>
+        <div class="meta">
+          <span class="date">March 13, 2021</span>
+        </div>
+        <div class="description">
+          @Existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-14" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/5517" target="_blank">
+          <img src="../token_thumbs/5517.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5517" target="_blank" class="header">
+            Autumn Chrystanthemum
+        </a>
+        <div class="meta">
+          <span class="date">March 13, 2021</span>
+        </div>
+        <div class="description">
+          @Existential.yogurt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-14" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-14" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#15</div>&nbsp;&nbsp;?</h1><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1ZZh4haUFRkDiinEhEtnKvaBiGyfpZg4QP" target="_blank"><i class="circle outline icon"></i> tz1ZZh4haUFRkDiinEhEtnKvaBiGyfpZg4QP</a></div><div class="ui horizontal statistic"><div class="value">718 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-14").sticky({context: "#sticky-parent-14"});$(".progress-14").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-15"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1942" target="_blank">
+          <img src="../token_thumbs/1942.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1942" target="_blank" class="header">
+            Geometrical Abstraction
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="90">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1978" target="_blank">
+          <img src="../token_thumbs/1978.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1978" target="_blank" class="header">
+            Geometrical Abstraction #2
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="81">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2143" target="_blank">
+          <img src="../token_thumbs/2143.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2143" target="_blank" class="header">
+            Geometrical Abstraction #3
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="30">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2555" target="_blank">
+          <img src="../token_thumbs/2555.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2555" target="_blank" class="header">
+            Geometrical Abstraction #4
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2557" target="_blank">
+          <img src="../token_thumbs/2557.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2557" target="_blank" class="header">
+            Geometrical Abstraction #5
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2571" target="_blank">
+          <img src="../token_thumbs/2571.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2571" target="_blank" class="header">
+            Geometrical Abstraction #6
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          A mere matter of ornament by @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-15" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2608" target="_blank">
+          <img src="../token_thumbs/2608.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2608" target="_blank" class="header">
+            Entangled
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          Entangled in the sea of branches, I smell the scent of chlorophile. I become infinitely small, or so it feels like, as the speed increases...
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="30">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2616" target="_blank">
+          <img src="../token_thumbs/2616.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2616" target="_blank" class="header">
+            Entangled #1
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          Entangled in the sea of branches, I smell the scent of chlorophile. I become infinitely small, or so it feels like, as the speed increases...
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="30">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/2617" target="_blank">
+          <img src="../token_thumbs/2617.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2617" target="_blank" class="header">
+            Entangled #2
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          Entangled in the sea of branches, I smell the scent of chlorophile. I become infinitely small, or so it feels like, as the speed increases...
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3018" target="_blank">
+          <img src="../token_thumbs/3018.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3018" target="_blank" class="header">
+            World of Cubes
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          We need cubes. Lots of cubes. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="30">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3026" target="_blank">
+          <img src="../token_thumbs/3026.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3026" target="_blank" class="header">
+            World of Cubes #2
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          We need cubes. Lots of cubes. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3030" target="_blank">
+          <img src="../token_thumbs/3030.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3030" target="_blank" class="header">
+            World of Cubes #3
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          We need cubes. Lots of cubes. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="71">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3049" target="_blank">
+          <img src="../token_thumbs/3049.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3049" target="_blank" class="header">
+            R3sonance 331
+        </a>
+        <div class="meta">
+          <span class="date">March 09, 2021</span>
+        </div>
+        <div class="description">
+          Today the base orbiter has started to move. Oscillating harvesters had the ability to generate an enormous amount of self-sustaining energy. They seem to establish parallel communication in resonance with cosmic frequencies but I find myself unable to decode the signal into anything meaningful. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-15" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3781" target="_blank">
+          <img src="../token_thumbs/3781.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3781" target="_blank" class="header">
+            R3sonance 231
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          Today the base orbiter has started to move. Oscillating harvesters had the ability to generate an enormous amount of self-sustaining energy. They seem to establish parallel communication in resonance with cosmic frequencies but I find myself unable to decode the signal into anything meaningful. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-15" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/3796" target="_blank">
+          <img src="../token_thumbs/3796.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3796" target="_blank" class="header">
+            R3sonance 231
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          Today the base orbiter has started to move. Oscillating harvesters had the ability to generate an enormous amount of self-sustaining energy. They seem to establish parallel communication in resonance with cosmic frequencies but I find myself unable to decode the signal into anything meaningful. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-15" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/5630" target="_blank">
+          <img src="../token_thumbs/5630.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5630" target="_blank" class="header">
+            R3sonance 331
+        </a>
+        <div class="meta">
+          <span class="date">March 13, 2021</span>
+        </div>
+        <div class="description">
+          Today the base orbiter has started to move. Oscillating harvesters had the ability to generate an enormous amount of self-sustaining energy. They seem to establish parallel communication in resonance with cosmic frequencies but I find myself unable to decode the signal into anything meaningful. By @ge1doot
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-15" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-15" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#16</div> ge1doot</h1><a href="https://twitter.com/ge1doot" target="_blank"><i class="twitter icon"></i>ge1doot</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1eFNQAijoHS3J6YsABA1QK1gGV7PMaunPm" target="_blank"><i class="circle outline icon"></i> tz1eFNQAijoHS3J6YsABA1QK1gGV7PMaunPm</a></div><div class="ui horizontal statistic"><div class="value">691 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-15").sticky({context: "#sticky-parent-15"});$(".progress-15").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-16"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/348" target="_blank">
+          <img src="../token_thumbs/348.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/348" target="_blank" class="header">
+            Haeckel CA
+        </a>
+        <div class="meta">
+          <span class="date">March 03, 2021</span>
+        </div>
+        <div class="description">
+          Self-Organizing Neural CA by Alex Mordvintsev, trying to imitate Ascidian by Ernst Haeckel
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 256.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-16" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/853" target="_blank">
+          <img src="../token_thumbs/853.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/853" target="_blank" class="header">
+            Lenin Grib
+        </a>
+        <div class="meta">
+          <span class="date">March 05, 2021</span>
+        </div>
+        <div class="description">
+          author: alex mordinvtsev (@zzznah) year: 2018
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 128.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-16" data-percent="25">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/3773" target="_blank">
+          <img src="../token_thumbs/3773.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/3773" target="_blank" class="header">
+            Basimycetes Nerual CA
+        </a>
+        <div class="meta">
+          <span class="date">March 10, 2021</span>
+        </div>
+        <div class="description">
+          ALife system inspired by art of  Ernst Haeckel. by Alex Mordvintsev (@zzznah)
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 18 &times; 16.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-16" data-percent="18">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/4649" target="_blank">
+          <img src="../token_thumbs/4649.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4649" target="_blank" class="header">
+            The Creation of Flowers
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          I've found an old artifact on my computer, dated Jul 6, 2017. That's the process my profile pic creation (https://twitter.com/zzznah)
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 64.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-16" data-percent="11">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/5584" target="_blank">
+          <img src="../token_thumbs/5584.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5584" target="_blank" class="header">
+            Lifeform N+1
+        </a>
+        <div class="meta">
+          <span class="date">March 13, 2021</span>
+        </div>
+        <div class="description">
+          Self-Organizing System by Alex Mordvintsev (https://twitter.com/zzznah)
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-16" data-percent="28">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-16" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#17</div>&nbsp;&nbsp;?</h1><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1LS9yPMo6cUQcxpeakNAJkPnAMqLrvjGCo" target="_blank"><i class="circle outline icon"></i> tz1LS9yPMo6cUQcxpeakNAJkPnAMqLrvjGCo</a></div><div class="ui horizontal statistic"><div class="value">679 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-16").sticky({context: "#sticky-parent-16"});$(".progress-16").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-17"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/374" target="_blank">
+          <img src="../token_thumbs/374.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/374" target="_blank" class="header">
+            v01i
+        </a>
+        <div class="meta">
+          <span class="date">March 03, 2021</span>
+        </div>
+        <div class="description">
+          Vortex. 74×34 chars; Simple Console; 720×720px; 128 frames; perfect loop.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 55.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-17" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/2004" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2004" target="_blank" class="header">
+            M3
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          50×50 cells; 750×750 pixels; 1871 frames; perfect loop.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 18.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-17" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/2005" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2005" target="_blank" class="header">
+            M7
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          50×50 cells; 750×750 pixels; 752 frames; perfect loop.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 18.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-17" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/2008" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/2008" target="_blank" class="header">
+            M2
+        </a>
+        <div class="meta">
+          <span class="date">March 08, 2021</span>
+        </div>
+        <div class="description">
+          50×50 cells; 750×750 pixels; 1128 frames; perfect loop.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 18.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-17" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-17" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#18</div> ertdfgcvb</h1><a href="https://twitter.com/andreasgysin" target="_blank"><i class="twitter icon"></i>andreasgysin</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1dEF5ZMTnBSkz2ZQPvpJjwyfeUUyGjeMtf" target="_blank"><i class="circle outline icon"></i> tz1dEF5ZMTnBSkz2ZQPvpJjwyfeUUyGjeMtf</a></div><div class="ui horizontal statistic"><div class="value">520 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-17").sticky({context: "#sticky-parent-17"});$(".progress-17").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-18"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="cube icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/4797" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4797" target="_blank" class="header">
+            Thou Askest Me Of My Glorious Name
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          a cyclops but also a self
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-18" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-18" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#19</div> Auriea Harvey</h1><a href="https://twitter.com/auriea" target="_blank"><i class="twitter icon"></i>auriea</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1a1L6vroYFXEwLn6A23woo8ae2EgA5QfSy" target="_blank"><i class="circle outline icon"></i> tz1a1L6vroYFXEwLn6A23woo8ae2EgA5QfSy</a></div><div class="ui horizontal statistic"><div class="value">490 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-18").sticky({context: "#sticky-parent-18"});$(".progress-18").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-19"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/806" target="_blank">
+          <img src="../token_thumbs/806.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/806" target="_blank" class="header">
+            Latentscaux, a Petting Zoo
+        </a>
+        <div class="meta">
+          <span class="date">March 05, 2021</span>
+        </div>
+        <div class="description">
+          #griffonagesLatents
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-19" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1683" target="_blank">
+          <img src="../token_thumbs/1683.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1683" target="_blank" class="header">
+            Lil Gem
+        </a>
+        <div class="meta">
+          <span class="date">March 07, 2021</span>
+        </div>
+        <div class="description">
+          #latenttuce
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-19" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/1797" target="_blank">
+          <img src="../token_thumbs/1797.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/1797" target="_blank" class="header">
+            Generative Adversarial Spirograph II
+        </a>
+        <div class="meta">
+          <span class="date">March 07, 2021</span>
+        </div>
+        <div class="description">
+          AI art
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 5 &times; 25.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-19" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/4850" target="_blank">
+          <img src="../token_thumbs/4850.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/4850" target="_blank" class="header">
+            A Leaf for Golan 
+        </a>
+        <div class="meta">
+          <span class="date">March 12, 2021</span>
+        </div>
+        <div class="description">
+          Neural Bricolage, Leaves of Manifold: l'édition spéciale
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-19" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/5753" target="_blank">
+          <img src="../token_thumbs/5753.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/5753" target="_blank" class="header">
+            Dreamy GAN and the City, a triptych
+        </a>
+        <div class="meta">
+          <span class="date">March 14, 2021</span>
+        </div>
+        <div class="description">
+          Neural Bricolage roams NYC, and then trains the GAN
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 5 &times; 25.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-19" data-percent="83">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-19" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#20</div> Helena Sarin</h1><a href="https://twitter.com/NeuralBricolage" target="_blank"><i class="twitter icon"></i>NeuralBricolage</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz2GLYoq3erGG5ajCxrYjk5aNMeHw4kDtzMV" target="_blank"><i class="circle outline icon"></i> tz2GLYoq3erGG5ajCxrYjk5aNMeHw4kDtzMV</a></div><div class="ui horizontal statistic"><div class="value">471 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-19").sticky({context: "#sticky-parent-19"});$(".progress-19").progress(); </script><div class="ui ten item menu"><a class="item" style="" href="./index.html">1&ndash;10</a><a class="item active" style="" href="./page_1.html">11&ndash;20</a><a class="item" style="" href="./page_2.html">21&ndash;30</a><a class="item" style="" href="./page_3.html">31&ndash;40</a><a class="item" style="" href="./page_4.html">41&ndash;50</a><a class="item" style="" href="./page_5.html">51&ndash;60</a><a class="item" style="" href="./page_6.html">61&ndash;70</a><a class="item" style="" href="./page_7.html">71&ndash;80</a><a class="item" style="" href="./page_8.html">81&ndash;90</a><a class="item" style="" href="./page_9.html">91&ndash;100</a></div><div style="height: 50px"></div></body>
