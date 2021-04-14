@@ -1,0 +1,2639 @@
+<head><title>Artworks rating (hicetnunc.xyz)</title>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@pallada92">
+        <meta name="twitter:title" content="Top-1000 hicetnunc.xyz artworks by income">
+        <meta name="twitter:description" content="Based on data from Tezos blockchain and IPFS">
+        <meta name="twitter:image" content="https://hashquine.github.io/hicetnunc/artworks-by-income-2/twitter_preview.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K4ZXSKTS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0K4ZXSKTS8');
+</script>
+</head><body style="margin: 0px auto; padding: 0px 20px; max-width: 1200px"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script><a class="github-fork-ribbon" href="https://github.com/hashquine/hicetnunc-dataset/blob/master/jupyter/output_html/artworks_rating_by_income.ipynb" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a><div class="ui top fixed menu">
+          <a class="item" href="../artists-by-income-4/index.html">Artists by income</a>
+          <a class="item active" href="../artworks-by-income-4/index.html">Artworks by income</a>
+        </div><div style="margin-top: 100px"></div><table class="ui celled striped table" style="margin-bottom: 50px"><thead><tr><th colspan="4">Hicetnunc open dataset and parsers: <a href="https://github.com/hashquine/hicetnunc-dataset" target="_blank">https://github.com/hashquine/hicetnunc-dataset</a></th></tr></thead><tbody><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.csv" target="_blank">addrs.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.json" target="_blank">addrs.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#addrsjson-and-addrscsv--of-all-hicetnunc-users" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc users with tzkt.io metadata and aggregated prices indicators</td><td class="right aligned collapsing"> 1.67 Mb<br/> 8.16 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.csv" target="_blank">tokens.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.json" target="_blank">tokens.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#tokensjson-and-tokenscsv--of-all-nfts-tokens" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc objkts and aggregated prices indicators</td><td class="right aligned collapsing">17.71 Mb<br/>48.29 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.csv" target="_blank">sells.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.json" target="_blank">sells.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#sellsjson-and-sellscsv--of-all-purchases-via-official-hicetnunc-swaps" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> Every sell event on hicetnunc website</td><td class="right aligned collapsing">24.27 Mb<br/>45.46 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.csv" target="_blank">swaps.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.json" target="_blank">swaps.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#swapsjson-and-swapscsv--all-official-hicetnunc-swaps-ever-created" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc swaps that ever existed</td><td class="right aligned collapsing"> 7.89 Mb<br/>20.26 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.csv" target="_blank">transfers.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.json" target="_blank">transfers.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#transfersjson-and-transferscsv--all-token-transfers" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc token transfers including external services like quipuswap</td><td class="right aligned collapsing">37.05 Mb<br/>66.31 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/token_thumbs" target="_blank">token_thumbs</a></td><td class="collapsing"></td></td><td class=""><i class="folder open outline icon"></i> Previews for some hicetnunc tokens exluding interactive ones</td><td class="right aligned collapsing"></td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/user_logos" target="_blank">user_logos</a></td><td class="collapsing"></td></td><td class=""><i class="folder open outline icon"></i> Logos of some users taken from tzkt.io</td><td class="right aligned collapsing"></td></tr></tbody></table><h1>Unofficial <a href="https://hicetnunc.xyz/" target="_blank">hicetnunc.xyz</a> rating of highest grossing artworks</h1><p align="left">Project by&nbsp; <a href="https://twitter.com/HashQuine" target="_blank"><i class="twitter icon"></i>HashQuine</a>. Based on data from Tezos blockchain (by <a href="https://tzstats.com/docs/api" target="_blank">TzStats API</a>), IPFS and <a href="http://tzkt.io/">tzkt.io</a> accounts metadata API. No requests to hicetnunc.xyz were sent during making this rating.</p><p align="right">Last updated April 7, 2021 20:00 UTC</p><div class="ui four item pointing menu"><a class="item" style="" href="./../artworks-by-income-1/index.html">minted March 1 &ndash; 14</a><a class="item" style="" href="./../artworks-by-income-2/index.html">minted March 15 &ndash; 31</a><a class="item" style="" href="./../artworks-by-income-3/index.html">minted April 1 &ndash; 6</a><a class="item active" style="" href="./../artworks-by-income-4/index.html">minted April 7 &ndash; 13</a></div><div class="ui ten item pointing menu"><a class="item" style="" href="./index.html">1&ndash;100</a><a class="item" style="" href="./page_1.html">101&ndash;200</a><a class="item" style="" href="./page_2.html">201&ndash;300</a><a class="item" style="" href="./page_3.html">301&ndash;400</a><a class="item" style="" href="./page_4.html">401&ndash;500</a><a class="item" style="" href="./page_5.html">501&ndash;600</a><a class="item" style="" href="./page_6.html">601&ndash;700</a><a class="item active" style="" href="./page_7.html">701&ndash;800</a><a class="item" style="" href="./page_8.html">801&ndash;900</a><a class="item" style="" href="./page_9.html">901&ndash;1000</a></div>
+        <div class="ui icon message" style="padding-bottom: 0; margin-bottom: 0px">
+          <i class="exclamation triangle icon"></i>
+          <div class="content">
+            <div class="header">
+              Word of caution:
+            </div>
+            <ul>
+                <li>
+                    We haven't validated, that the artists accounts presented here are really owned by the artists themselves.
+                    Please double check before purchasing.
+                </li>
+                <li>
+                    These metrics can be easily cheated by artists creating transactions between fake accounts.
+                    Do not rely on this data alone!
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui divider"></div><div class="ui four doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27018" target="_blank">
+          <img src="../token_thumbs/27018.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27018" target="_blank" class="header">
+            Banding Together #001
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Experiments in generative datasets and ML models / Processing + StyleGan | 1024 x 1024 pixels | px | T: @RT_Artwork | IG: @r.y.a.n.t.h.o.m.p.s.o.n | www.ryanthompson.name
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 5 &times; 1.60Ꜩ,<br/>avail. at 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="71">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/26716" target="_blank">
+          <img src="../token_thumbs/26716.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26716" target="_blank" class="header">
+            GD Helmet Collectibles "Thunder Element" Initial Edition
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          GD elemental helmet collectibles with beats.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 4.00Ꜩ,<br/>avail. at 4.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="11">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26992" target="_blank">
+          <img src="../token_thumbs/26992.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26992" target="_blank" class="header">
+            Lucinda Satoshi
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Re-edit of Lucinda Rose merged with Satoshi Flowers (Genesis Block) 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27293" target="_blank">
+          <img src="../token_thumbs/27293.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27293" target="_blank" class="header">
+            falldownupday
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          isometric impossibilities. click on the buttons with mouse/finger/appendage for interactivity. no javascript, all style. don't get lost in the clouds
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27312" target="_blank">
+          <img src="../token_thumbs/27312.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27312" target="_blank" class="header">
+            Columbia River
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Aerial drawing of a section of the Columbia River in the USA
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="40">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27503" target="_blank">
+          <img src="../token_thumbs/27503.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27503" target="_blank" class="header">
+            Pereamus N.6
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          "We may be perishing." Speculative material about the future.(insta: @WendiYan, twitter: @WendiYan5, website: wendiyan.com)
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ,<br/>avail. at 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26049" target="_blank">
+          <img src="../token_thumbs/26049.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26049" target="_blank" class="header">
+            SHE MAD
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Martine Syms | 1200x400 | Part of @cali4niaclub’s bumper sticker group show: https://cali4nia.club
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 8 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="16">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27544" target="_blank">
+          <img src="../token_thumbs/27544.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27544" target="_blank" class="header">
+            Tokyo nights
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          This piece is inspired by the beautiful and peaceful country of Japan.  I reimagined the portion of Tokyo in 3D.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ,<br/>avail. at 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25169" target="_blank">
+          <img src="../token_thumbs/25169.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25169" target="_blank" class="header">
+            COEXIST
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Chrome, Opera, Internet Explorer, AOL, Safari, Netscape, Mosaic, Tor
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 8 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="16">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27713" target="_blank">
+          <img src="../token_thumbs/27713.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27713" target="_blank" class="header">
+            Time is not linear
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Fractal art by Dharini, made in UltraFractal
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="40">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/26930" target="_blank">
+          <img src="../token_thumbs/26930.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26930" target="_blank" class="header">
+            Am I Coming Or Going?
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Experimenting with glitchy gif
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 4.00Ꜩ,<br/>avail. at 4.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="40">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/27618" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27618" target="_blank" class="header">
+            after hours alt. 1
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          the way we feel after a long day. altered version of my after hours artwork. Version 1 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ,<br/>avail. at 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27945" target="_blank">
+          <img src="../token_thumbs/27945.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27945" target="_blank" class="header">
+            DROWNING IN LOVE
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Everyone needs love to survive, but sometimes you can drown
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 4.00Ꜩ,<br/>avail. at 4.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="22">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/28589" target="_blank">
+          <img src="../token_thumbs/28589.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28589" target="_blank" class="header">
+            ldy strdst doll
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          now you can finally have outter space fashion in your hand; or better, in your wallet!
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.14Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="38">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28601" target="_blank">
+          <img src="../token_thumbs/28601.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28601" target="_blank" class="header">
+            The Art World – Art Fair Directors (tote bag)
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          The Art World is a series of sentences about the actors in the contemporary art scene. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="28">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/28827" target="_blank">
+          <img src="../token_thumbs/28827.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28827" target="_blank" class="header">
+            Subject #4 Crawl Test
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          subject 4 attempts the "crawl forwards" challenge, fails miserably 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="26">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29330" target="_blank">
+          <img src="../token_thumbs/29330.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29330" target="_blank" class="header">
+            SVADA - Land
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          SVADA - A unique blend of generative code, painting and texture from upcoming Swedish Stockholm based artist.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="40">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29675" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29675" target="_blank" class="header">
+            BlackMatter #000
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Gif Loop | 768x768 pixels | 300 frames | Twitter : generativePunk - www.pizza-punk.com 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 8 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="42">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29752" target="_blank">
+          <img src="../token_thumbs/29752.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29752" target="_blank" class="header">
+            nocturnal disaster
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          ✤ watercolour, grafite, nankim and guache ink on 300 g/m² cotton paper | size 15x16cm / 3502x3708px ✤✤✤
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="13">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/29795" target="_blank">
+          <img src="../token_thumbs/29795.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29795" target="_blank" class="header">
+            LOST
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Lost :( - 1080x1080 mp4 / August 2019 / @jhuson_
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 6 &times; 1.33Ꜩ,<br/>avail. at 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="60">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29766" target="_blank">
+          <img src="../token_thumbs/29766.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29766" target="_blank" class="header">
+            Shattered Orbit
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          As I was working on this piece, imagery of planets breaking orbit and veering into each other in a grand display of cosmic annihilation.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="16">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30151" target="_blank">
+          <img src="../token_thumbs/30151.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30151" target="_blank" class="header">
+            Waving Back (6)
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Waving back at the plenoptic camera. Cells are "activated" by motion in the image.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30691" target="_blank">
+          <img src="../token_thumbs/30691.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30691" target="_blank" class="header">
+            Vertex 3
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Vertex 3 (3/8). Under the aspect of eternity, Nature is hidden. 2021. 4200x4200 png. @dianedrubay
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ,<br/>avail. at 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="25">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30736" target="_blank">
+          <img src="../token_thumbs/30736.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30736" target="_blank" class="header">
+            Strain 015
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Strain 015: Bubblegum Flavoured Meds
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/26908" target="_blank">
+          <img src="../token_thumbs/26908.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26908" target="_blank" class="header">
+            duality
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          first gif ever made
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ,<br/>avail. at 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30811" target="_blank">
+          <img src="../token_thumbs/30811.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30811" target="_blank" class="header">
+            ARCHGRAV#3 collection Created by Laurent La Torpille aka LLT
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Inspired by the engraving and architecture of the ARCHGRAV collection and made with an algorithm that propagates in a photograph. I created the algorithm and took the original photo. 2362x2362 pixels
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31564" target="_blank">
+          <img src="../token_thumbs/31564.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31564" target="_blank" class="header">
+            +2.18%
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Noise study 2021 a.k.a. OMXS30 - @unpetitsapin - www.petitsapin.com
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 8 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="80">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30291" target="_blank">
+          <img src="../token_thumbs/30291.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30291" target="_blank" class="header">
+            PIXEL BAROK
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Artist: Bjorn Calleja // Photoshop Pixel Art // 2021
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 4.00Ꜩ,<br/>avail. at 6.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="5">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/31764" target="_blank">
+          <img src="../token_thumbs/31764.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31764" target="_blank" class="header">
+            On tour
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          We drove for hours. 2D digital animation.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="40">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31940" target="_blank">
+          <img src="../token_thumbs/31940.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31940" target="_blank" class="header">
+            Stripes 20210413_135003
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Generated by Dan Gries.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 8.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/32029" target="_blank">
+          <img src="../token_thumbs/32029.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32029" target="_blank" class="header">
+            Loop I
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Rarity: normal/colorful
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 4.00Ꜩ,<br/>avail. at 4.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/32076" target="_blank">
+          <img src="../token_thumbs/32076.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32076" target="_blank" class="header">
+            skulldeathredux
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          animated gif, 3/3/2012, 1144 x 1144 pixels
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28356" target="_blank">
+          <img src="../token_thumbs/28356.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28356" target="_blank" class="header">
+            Bow and Marrow
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          "Shots?" @dioneye
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 13 &times; 0.61Ꜩ,<br/>avail. at 0.99Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="65">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25266" target="_blank">
+          <img src="../token_thumbs/25266.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25266" target="_blank" class="header">
+            WORM 'ENDERMAN'
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          MINECRAFT
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.70Ꜩ,<br/>avail. at 35.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26184" target="_blank">
+          <img src="../token_thumbs/26184.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26184" target="_blank" class="header">
+            DOG 'BUM'
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          お尻
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.70Ꜩ,<br/>avail. at 120.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27150" target="_blank">
+          <img src="../token_thumbs/27150.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27150" target="_blank" class="header">
+            PIG 'JASON'
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Friday, The 13th
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.70Ꜩ,<br/>avail. at 40.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25108" target="_blank">
+          <img src="../token_thumbs/25108.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25108" target="_blank" class="header">
+            Doorstop
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          a dangerous one
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 3.75Ꜩ,<br/>avail. at 25.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="66">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/25466" target="_blank">
+          <img src="../token_thumbs/25466.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25466" target="_blank" class="header">
+            Bits washing
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Bit washing is a digital video artwork by Dimitri Thouzery. It's questionning the relationship between the digitalisation of the world and the reality during the covid pandemic situation.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25720" target="_blank">
+          <img src="../token_thumbs/25720.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25720" target="_blank" class="header">
+            Ghosts VII, 2021
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          A reality of the past. I guess I always wanted more.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 5 &times; 1.50Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/27666" target="_blank">
+          <img src="../token_thumbs/27666.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27666" target="_blank" class="header">
+            Mikki
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          ig: @burkabayram / tw: @burkabayramart
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 5 &times; 1.50Ꜩ,<br/>avail. at 1.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="33">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/25200" target="_blank">
+          <img src="../token_thumbs/25200.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25200" target="_blank" class="header">
+            Infinite Robotic Rituals
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Robotic Rituals infinite - Animated . Tools: Zbrush , Photoshop and After Effects
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="60">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/28350" target="_blank">
+          <img src="../token_thumbs/28350.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28350" target="_blank" class="header">
+            HoloSerpens 
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          3d animation, 3sec, .MP4, 3,19MB by Marcelo Pinel cybermystic garden www.instagram.com/pinel.marcelo
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30586" target="_blank">
+          <img src="../token_thumbs/30586.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30586" target="_blank" class="header">
+            Purple Hills
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="21">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30718" target="_blank">
+          <img src="../token_thumbs/30718.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30718" target="_blank" class="header">
+            Strain 014
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Strain 014: Winter Cyclamen
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.50Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/31021" target="_blank">
+          <img src="../token_thumbs/31021.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31021" target="_blank" class="header">
+            sensories.01_warp eye
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          | see with the mind's eye | 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.50Ꜩ,<br/>avail. at 7.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/31053" target="_blank">
+          <img src="../token_thumbs/31053.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31053" target="_blank" class="header">
+            D'Noitchínha
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          "everything//cyclical" 1080x1184px. by Carlos Moreira O.V. //  tt-@falhitousbig ig-@moreiratattooer
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="37">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/32146" target="_blank">
+          <img src="../token_thumbs/32146.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32146" target="_blank" class="header">
+            1_10-1_0_11
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Spectrum synthesis.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.50Ꜩ,<br/>avail. at 2.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="6">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25263" target="_blank">
+          <img src="../token_thumbs/25263.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25263" target="_blank" class="header">
+            WORM 'EVIL'
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          悪の
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.40Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31441" target="_blank">
+          <img src="../token_thumbs/31441.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31441" target="_blank" class="header">
+            SHARK 'ALIEN'
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          エイリアン
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.40Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30773" target="_blank">
+          <img src="../token_thumbs/30773.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30773" target="_blank" class="header">
+            TURTLE 'CACTUS'
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          カクタス
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.30Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30780" target="_blank">
+          <img src="../token_thumbs/30780.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30780" target="_blank" class="header">
+            TURTLE 'MICHELANGELO'
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Teenage Mutant Ninja Turtles
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.30Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27147" target="_blank">
+          <img src="../token_thumbs/27147.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27147" target="_blank" class="header">
+            PIG 'SUPERMAN'
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          スーパーマン
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.20Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26181" target="_blank">
+          <img src="../token_thumbs/26181.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26181" target="_blank" class="header">
+            DOG 'COOK'
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          クック
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.10Ꜩ,<br/>avail. at 220.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30763" target="_blank">
+          <img src="../token_thumbs/30763.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30763" target="_blank" class="header">
+            TURTLE 'PANZER'
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          パンザー
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.10Ꜩ,<br/>avail. at 5.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/25289" target="_blank">
+          <img src="../token_thumbs/25289.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25289" target="_blank" class="header">
+            Friedrich Nietzsche
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Historical character #7/33 brought back to life thanks to AI technology. Format GIF - size 512 x 512px. Twitter: @historicalive HISTORICALIVE
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 0.70Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="90">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/25356" target="_blank">
+          <img src="../token_thumbs/25356.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25356" target="_blank" class="header">
+            audiovisual #01
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Code generated audiovisual made using Processing. | Author - Alessandro Borelli | @alessBorelli | Song made by @cutmylips
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/26727" target="_blank">
+          <img src="../token_thumbs/26727.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26727" target="_blank" class="header">
+            Inner Sun
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          hand-made watercolor animation by Antonio Failache @antoniofailache
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="35">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/26741" target="_blank">
+          <img src="../token_thumbs/26741.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26741" target="_blank" class="header">
+            loading
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          gonna find a way. // 1200x1200
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="28">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26845" target="_blank">
+          <img src="../token_thumbs/26845.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26845" target="_blank" class="header">
+            Keep Moving Forward
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Digital art based on makeup selfie. This image was made with 10 other images to create the atmosphere of endless love. by Marina Baliú @malinaxxxxxx 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="77">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">PDF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/27733" target="_blank">
+          <img src="../token_thumbs/27733.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27733" target="_blank" class="header">
+            Cursive Binary: We Are the Sex Organs of Technology [After Marshall McLuhan]
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          NEAR-FUTURE TRANSLATIONS. Translation of an original poem by @sashastiles into Cursive Binary, a proposed language for transhuman communication.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28125" target="_blank">
+          <img src="../token_thumbs/28125.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28125" target="_blank" class="header">
+            Nintendo Hair
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          This is what happens to my hair after a full night of gaming.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28255" target="_blank">
+          <img src="../token_thumbs/28255.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28255" target="_blank" class="header">
+            WOLFLINES 
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          print sized digital scribbles on endangered wolf fourleanhoundscrouchedlowandsmilingmyheartfelldeadbefore
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="87">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28324" target="_blank">
+          <img src="../token_thumbs/28324.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28324" target="_blank" class="header">
+            Cat-Lady Etching
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          NFT from zinc plate etching of Cat-Lady by Tori Batt
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="63">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/26321" target="_blank">
+          <img src="../token_thumbs/26321.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26321" target="_blank" class="header">
+            Fragmomentum #1
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Fragmomentum by Rafael Spif (Digital Collage Artist)- About my work here -> https://www.instagram.com/rafaelspiff/ and https://twitter.com/RafaelSpif
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="1">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/28807" target="_blank">
+          <img src="../token_thumbs/28807.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28807" target="_blank" class="header">
+            BunnyFOxx
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          She likes women who look like they could easily devour her. DO you see the red eyes glowing?
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27444" target="_blank">
+          <img src="../token_thumbs/27444.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27444" target="_blank" class="header">
+            Gatespace Transmission
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Original Audio/Video by @post.americana
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="25">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="cube icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/29004" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29004" target="_blank" class="header">
+            Multi Purpose Spray Paint
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Concept Design of a spray can made by MOX lab.           MOX lab is an independent Art Studio based in Fortaleza-Brazil specialized in 3D, design, animation and filmmaking.      By: Edu Moreira and Lucas Santos(@terremofo and @_Sant_Lucas on twitter).
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="23">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29018" target="_blank">
+          <img src="../token_thumbs/29018.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29018" target="_blank" class="header">
+            Looping Lotus
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          A small animated gif, designed for my first Generative Methods class at Northwestern. Uses P5 and my special polar-coordinate looping noise technique. The first NFT minted by GalaxyKate
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 170.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="77">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29084" target="_blank">
+          <img src="../token_thumbs/29084.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29084" target="_blank" class="header">
+            Gold but Dead
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Old.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 1.75Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="16">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">SVG</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29245" target="_blank">
+          <img src="../token_thumbs/29245.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29245" target="_blank" class="header">
+            Realtime OBJKT N°04
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Realtime OBJKT N°04 is an interactive CollaborativeObject by @alexander_grasser https://alexandergrasser.com .a playful, interactive and participatory configurator for cross-scale architectural and urban applications .click&hold left mouse button to draw on the canvas. click on the middle mouse button to restart. click the right mouse button to save a png of your unique configuration of collaborative objects. share them using #CollaborativeObjects
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 27 &times; 0.26Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="30">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29379" target="_blank">
+          <img src="../token_thumbs/29379.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29379" target="_blank" class="header">
+            Jaboticaba farm
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          pixel art, from a series of eco-houses made in ms-paint made in 2016. 1478x12880 185kb .PNG, by Marcelo Pinel cybermysticgarden www.instagram.com/pinel.marcelo
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="14">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29915" target="_blank">
+          <img src="../token_thumbs/29915.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29915" target="_blank" class="header">
+            cryptojulia
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="cube icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30003" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30003" target="_blank" class="header">
+            sleepy rex
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          artist @itsinthestairs // a cute sleepy 3d trex friend
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="46">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30014" target="_blank">
+          <img src="../token_thumbs/30014.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30014" target="_blank" class="header">
+            mycorrhizae #5
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28949" target="_blank">
+          <img src="../token_thumbs/28949.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28949" target="_blank" class="header">
+            valentim
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30188" target="_blank">
+          <img src="../token_thumbs/30188.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30188" target="_blank" class="header">
+            MAMACI
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          the boy is hungry.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="28">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/30786" target="_blank">
+          <img src="../token_thumbs/30786.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30786" target="_blank" class="header">
+            floater.02
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          floater.02 by beisik @abelitskaja
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="46">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30713" target="_blank">
+          <img src="../token_thumbs/30713.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30713" target="_blank" class="header">
+            Strain 013
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Strain 013: Neon Meme
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 55.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31137" target="_blank">
+          <img src="../token_thumbs/31137.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31137" target="_blank" class="header">
+            POKER#001
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          The 10 first editions will be swapped by 1 tez. From these 10, I will raffle 3 buyers to receive a cashback of 100 BRL or 2 tez each. This is a NFT gamification experience, stay tuned for more interactive art and follow up my live streams. Most of my profit will be donated to a ONG or someone in poverty.As 10 primeiras edições serão swapadas por 1 tez. Dessas 10, irei sortear 3 pessoas para receber de volta 100 reais ou 2 tezos. Essa é uma experiência de gamificação NFT...
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27304" target="_blank">
+          <img src="../token_thumbs/27304.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27304" target="_blank" class="header">
+            Clouds
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Continuous movement. Constant change yet the same patterns. Cycles of life. Original painting & animation: Yulia Babanova. Mp4 video loop, 30 sec, 3937 X 3937 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/31562" target="_blank">
+          <img src="../token_thumbs/31562.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31562" target="_blank" class="header">
+            Maneater 2
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Maneater 2 by yavuzozturk / ig: yavuzozturk
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31719" target="_blank">
+          <img src="../token_thumbs/31719.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31719" target="_blank" class="header">
+            DERBY
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          CHILDHOOD CLASSICS /// BAR DO JACARÉ
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31383" target="_blank">
+          <img src="../token_thumbs/31383.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31383" target="_blank" class="header">
+            Foliage Ran Through the Washing Machine
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Photo of floral arrangement, heavy distortion, chromatic manipulation, wireframing, pixel interpolation.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 11 &times; 0.64Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="47">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/32044" target="_blank">
+          <img src="../token_thumbs/32044.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32044" target="_blank" class="header">
+            expand your reality.
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          expand your reality. created by iambecauseweart.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/32061" target="_blank">
+          <img src="../token_thumbs/32061.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32061" target="_blank" class="header">
+            Natural Anatomy Left Hand 001
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Natural microcosms inside my body: my left hand 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/31700" target="_blank">
+          <img src="../token_thumbs/31700.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31700" target="_blank" class="header">
+            Plants breathe too
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Animated loop, 1500px x 1500px, 2020 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31602" target="_blank">
+          <img src="../token_thumbs/31602.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31602" target="_blank" class="header">
+            Parallel Universe 01
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Abstract 3D - 2160x2160
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="33">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31710" target="_blank">
+          <img src="../token_thumbs/31710.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31710" target="_blank" class="header">
+            Little Monsters
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          A team of monsters, just hangin' out. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="10">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/31728" target="_blank">
+          <img src="../token_thumbs/31728.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31728" target="_blank" class="header">
+            Seaweed skincare
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Just an alien cruising across the sky
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/31368" target="_blank">
+          <img src="../token_thumbs/31368.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31368" target="_blank" class="header">
+            Good vibrations 
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          Catching some good vibrations tonight. An abstract feeling brought to life through color and animation. How do you feel when you look at this? 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="33">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/25738" target="_blank">
+          <img src="../token_thumbs/25738.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25738" target="_blank" class="header">
+            Big Mouth Strikes Again
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          "Sweetness, sweetness I was only joking when I said by rights you should be bludgeoned in your bed" By Dioneye's Sis @dioneye
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 14 &times; 0.50Ꜩ,<br/>avail. at 0.99Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="70">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25465" target="_blank">
+          <img src="../token_thumbs/25465.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25465" target="_blank" class="header">
+            Glad Rags
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Am I overdressed? Created By Dioneye's Sis @dioneye
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 6.66Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/28532" target="_blank">
+          <img src="../token_thumbs/28532.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28532" target="_blank" class="header">
+            S&J
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          One and only brazillian black metal band animated poster .Blood&Junior is this pixel paining, i created elements on 124x124px grid and the i put it together in a .gif__1550x1843px 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 6.60Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29280" target="_blank">
+          <img src="../token_thumbs/29280.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29280" target="_blank" class="header">
+            Gif Multiverse #002
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Everything is connected! In the search for an understanding of the cosmos, accessing all the dimensions and layers of the multiverse comprising the totality of space, time, matter and the energies of the cosmos. An internal journey that expands to infinity. "We are all potential Gods!" Tools: Zbrush, After effects,Adobe Premiere Pro, Illustrator and Photoshop.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 2 &times; 3.30Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/29599" target="_blank">
+          <img src="../token_thumbs/29599.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29599" target="_blank" class="header">
+            CryptoSpider 004 - Golden
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          "I found this species that day I sold all my previous species.." |   Cinema4D 1080x1080px ( twitter.com/AracnoCrypto )
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 6 &times; 1.08Ꜩ,<br/>avail. at 1.40Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/30706" target="_blank">
+          <img src="../token_thumbs/30706.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30706" target="_blank" class="header">
+            Strain 012
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Strain 012: Desert Silks
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 6.50Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25830" target="_blank">
+          <img src="../token_thumbs/25830.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25830" target="_blank" class="header">
+            img_118_conf_23.0004.jpg
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          http://www.sterlingcrispin.com/data-masks.html
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 6.11Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-0" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29564" target="_blank">
+          <img src="../token_thumbs/29564.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29564" target="_blank" class="header">
+            Trinity
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Gothic symbolism meets fishnets. Inspired by a pre-pandemic trip to Paris.  
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.03Ꜩ,<br/>avail. at 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="75">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25160" target="_blank">
+          <img src="../token_thumbs/25160.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25160" target="_blank" class="header">
+            Segundo sonho de Jasaya
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Artista: Jasaya, arte vetor em CorelDRAW 06 04 21
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 0.67Ꜩ,<br/>avail. at 1.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="75">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25391" target="_blank">
+          <img src="../token_thumbs/25391.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25391" target="_blank" class="header">
+            RandoGeoV04
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Procedural geometry done in SideFX Houdini, rendered with Mantra.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-0" data-percent="15">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><script>$(".progress-0").progress(); </script><div class="ui ten item menu"><a class="item" style="" href="./index.html">1&ndash;100</a><a class="item" style="" href="./page_1.html">101&ndash;200</a><a class="item" style="" href="./page_2.html">201&ndash;300</a><a class="item" style="" href="./page_3.html">301&ndash;400</a><a class="item" style="" href="./page_4.html">401&ndash;500</a><a class="item" style="" href="./page_5.html">501&ndash;600</a><a class="item" style="" href="./page_6.html">601&ndash;700</a><a class="item active" style="" href="./page_7.html">701&ndash;800</a><a class="item" style="" href="./page_8.html">801&ndash;900</a><a class="item" style="" href="./page_9.html">901&ndash;1000</a></div><div style="height: 50px"></div></body>

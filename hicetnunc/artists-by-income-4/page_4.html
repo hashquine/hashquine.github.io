@@ -1,0 +1,2977 @@
+<head><title>Artists rating (hicetnunc.xyz)</title>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@pallada92">
+        <meta name="twitter:title" content="Top-100 hicetnunc.xyz artists by income">
+        <meta name="twitter:description" content="Based on data from Tezos blockchain and IPFS">
+        <meta name="twitter:image" content="https://hashquine.github.io/hicetnunc/artists-by-income-1/twitter_preview.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K4ZXSKTS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0K4ZXSKTS8');
+</script>
+</head><body style="margin: 0px auto; padding: 0px 20px; max-width: 1200px"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script><a class="github-fork-ribbon" href="https://github.com/hashquine/hicetnunc-dataset/blob/master/jupyter/output_html/artist_rating_by_income.ipynb" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a><div class="ui top fixed menu" style="z-index: 1000">
+          <a class="item active" href="../artists-by-income-4/index.html">Artists by income</a>
+          <a class="item" href="../artworks-by-income-4/index.html">Artworks by income</a>
+        </div><div style="margin-top: 100px"></div><table class="ui celled striped table" style="margin-bottom: 50px"><thead><tr><th colspan="4">Hicetnunc open dataset and parsers: <a href="https://github.com/hashquine/hicetnunc-dataset" target="_blank">https://github.com/hashquine/hicetnunc-dataset</a></th></tr></thead><tbody><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.csv" target="_blank">addrs.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/addrs.json" target="_blank">addrs.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#addrsjson-and-addrscsv--of-all-hicetnunc-users" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc users with tzkt.io metadata and aggregated prices indicators</td><td class="right aligned collapsing"> 1.67 Mb<br/> 8.16 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.csv" target="_blank">tokens.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/tokens.json" target="_blank">tokens.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#tokensjson-and-tokenscsv--of-all-nfts-tokens" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc objkts and aggregated prices indicators</td><td class="right aligned collapsing">17.71 Mb<br/>48.29 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.csv" target="_blank">sells.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/sells.json" target="_blank">sells.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#sellsjson-and-sellscsv--of-all-purchases-via-official-hicetnunc-swaps" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> Every sell event on hicetnunc website</td><td class="right aligned collapsing">24.27 Mb<br/>45.46 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.csv" target="_blank">swaps.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/swaps.json" target="_blank">swaps.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#swapsjson-and-swapscsv--all-official-hicetnunc-swaps-ever-created" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc swaps that ever existed</td><td class="right aligned collapsing"> 7.89 Mb<br/>20.26 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.csv" target="_blank">transfers.csv</a><br/><a href="https://raw.githubusercontent.com/hashquine/hicetnunc-dataset/master/dataset/transfers.json" target="_blank">transfers.json</a></td><td class="collapsing" align="center"><a href="https://github.com/hashquine/hicetnunc-dataset/#transfersjson-and-transferscsv--all-token-transfers" target="_blank">fields<br/>description</a></td></td><td class=""><i class="table icon"></i> All hicetnunc token transfers including external services like quipuswap</td><td class="right aligned collapsing">37.05 Mb<br/>66.31 Mb</td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/token_thumbs" target="_blank">token_thumbs</a></td><td class="collapsing"></td></td><td class=""><i class="folder open outline icon"></i> Previews for some hicetnunc tokens exluding interactive ones</td><td class="right aligned collapsing"></td></tr><tr><td class="collapsing right aligned"><a href="https://github.com/hashquine/hashquine.github.io/tree/master/hicetnunc/user_logos" target="_blank">user_logos</a></td><td class="collapsing"></td></td><td class=""><i class="folder open outline icon"></i> Logos of some users taken from tzkt.io</td><td class="right aligned collapsing"></td></tr></tbody></table><h1>Unofficial <a href="https://hicetnunc.xyz/" target="_blank">hicetnunc.xyz</a> artists rating by total value of sold <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank">NFT</a>s (in <a href="https://en.wikipedia.org/wiki/Tezos" target="_blank">Tezos</a>)</h1><p align="left">Project by&nbsp; <a href="https://twitter.com/HashQuine" target="_blank"><i class="twitter icon"></i>HashQuine</a>. Based on data from Tezos blockchain (by <a href="https://tzstats.com/docs/api" target="_blank">TzStats API</a>), IPFS and <a href="http://tzkt.io/">tzkt.io</a> accounts metadata API. No requests to hicetnunc.xyz were sent during making this rating.</p><p align="right">Last updated April 7, 2021 20:00 UTC</p><div class="ui four item pointing menu"><a class="item" style="" href="./../artists-by-income-1/index.html">minted March 1 &ndash; 15</a><a class="item" style="" href="./../artists-by-income-2/index.html">minted March 15 &ndash; 31</a><a class="item" style="" href="./../artists-by-income-3/index.html">minted April 1 &ndash; 7</a><a class="item active" style="" href="./../artists-by-income-4/index.html">minted April 7 &ndash; 13</a></div><div class="ui ten item pointing menu"><a class="item" style="" href="./index.html">1&ndash;10</a><a class="item" style="" href="./page_1.html">11&ndash;20</a><a class="item" style="" href="./page_2.html">21&ndash;30</a><a class="item" style="" href="./page_3.html">31&ndash;40</a><a class="item active" style="" href="./page_4.html">41&ndash;50</a><a class="item" style="" href="./page_5.html">51&ndash;60</a><a class="item" style="" href="./page_6.html">61&ndash;70</a><a class="item" style="" href="./page_7.html">71&ndash;80</a><a class="item" style="" href="./page_8.html">81&ndash;90</a><a class="item" style="" href="./page_9.html">91&ndash;100</a></div>
+        <div class="ui icon message" style="padding-bottom: 0; margin-bottom: 0px">
+          <i class="exclamation triangle icon"></i>
+          <div class="content">
+            <div class="header">
+              Word of caution:
+            </div>
+            <ul>
+                <li>
+                    We haven't validated, that the artists accounts presented here are really owned by the artists themselves.
+                    Please double check before purchasing.
+                </li>
+                <li>
+                    These metrics can be easily cheated by artists creating transactions between fake accounts.
+                    Do not rely on this data alone!
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui divider"></div><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-40"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/31749" target="_blank">
+          <img src="../token_thumbs/31749.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/31749" target="_blank" class="header">
+            The Baker
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          "The Baker" by MAIKEUL.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 190.00Ꜩ,<br/>avail. at 190.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-40" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-40" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#41</div> MAIKEUL</h1><a href="https://twitter.com/MaikeulMaikeul" target="_blank"><i class="twitter icon"></i>MaikeulMaikeul</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1fP1xrV55sqTV3zfdxvYpqbLcE92GAZbnR" target="_blank"><i class="circle outline icon"></i> tz1fP1xrV55sqTV3zfdxvYpqbLcE92GAZbnR</a></div><div class="ui horizontal statistic"><div class="value">156 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-40").sticky({context: "#sticky-parent-40", offset: 40});$(".progress-40").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-41"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27351" target="_blank">
+          <img src="../token_thumbs/27351.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27351" target="_blank" class="header">
+            Vanité, November 2014
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Vanité,  drawn live by a RNP robot during a Human Study #2 performance. 24 x 32 cm, black ink on paper. The original drawing will be sent to you. @patricktresset
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-41" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27442" target="_blank">
+          <img src="../token_thumbs/27442.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27442" target="_blank" class="header">
+            Vanité, November 2014
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Vanité, drawn live by a RNP robot during a Human Study #2 performance. 24 x 32 cm, black ink on paper. The original drawing will be sent to you. @patricktresset
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-41" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27492" target="_blank">
+          <img src="../token_thumbs/27492.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27492" target="_blank" class="header">
+            Vanité, March 2016
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Vanité, drawn live by a RNP robot during a Human Study #2 performance. 24 x 32 cm, black ink on paper. The original drawing will be sent to you. @patricktresset
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-41" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-41" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#42</div>&nbsp;&nbsp;?</h1><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1Nya76YpbX36cSzg2FmiKN3y1xeqfNCTU2" target="_blank"><i class="circle outline icon"></i> tz1Nya76YpbX36cSzg2FmiKN3y1xeqfNCTU2</a></div><div class="ui horizontal statistic"><div class="value">151 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-41").sticky({context: "#sticky-parent-41", offset: 40});$(".progress-41").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-42"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25059" target="_blank">
+          <img src="../token_thumbs/25059.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25059" target="_blank" class="header">
+            CryptoBeeple #36
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.87Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25087" target="_blank">
+          <img src="../token_thumbs/25087.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25087" target="_blank" class="header">
+            CryptoBeeple #37
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.87Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25097" target="_blank">
+          <img src="../token_thumbs/25097.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25097" target="_blank" class="header">
+            CryptoBeeple #38
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25106" target="_blank">
+          <img src="../token_thumbs/25106.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25106" target="_blank" class="header">
+            CryptoBeeple #39
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.07Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25114" target="_blank">
+          <img src="../token_thumbs/25114.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25114" target="_blank" class="header">
+            CryptoBeeple #40
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 1000.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25124" target="_blank">
+          <img src="../token_thumbs/25124.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25124" target="_blank" class="header">
+            CryptoBeeple #41
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.17Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25130" target="_blank">
+          <img src="../token_thumbs/25130.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25130" target="_blank" class="header">
+            CryptoBeeple #42
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.27Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25140" target="_blank">
+          <img src="../token_thumbs/25140.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25140" target="_blank" class="header">
+            CryptoBeeple #43
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.37Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25147" target="_blank">
+          <img src="../token_thumbs/25147.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25147" target="_blank" class="header">
+            CryptoBeeple #44
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 444.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25155" target="_blank">
+          <img src="../token_thumbs/25155.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25155" target="_blank" class="header">
+            CryptoBeeple #45
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 4.00Ꜩ,<br/>avail. at 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25159" target="_blank">
+          <img src="../token_thumbs/25159.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25159" target="_blank" class="header">
+            CryptoBeeple #46
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.57Ꜩ,<br/>avail. at 666.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25165" target="_blank">
+          <img src="../token_thumbs/25165.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25165" target="_blank" class="header">
+            CryptoBeeple #47
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.77Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25171" target="_blank">
+          <img src="../token_thumbs/25171.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25171" target="_blank" class="header">
+            CryptoBeeple #48
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 3.47Ꜩ,<br/>avail. at 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25177" target="_blank">
+          <img src="../token_thumbs/25177.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25177" target="_blank" class="header">
+            CryptoBeeple #49
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.47Ꜩ,<br/>avail. at 49.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25186" target="_blank">
+          <img src="../token_thumbs/25186.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25186" target="_blank" class="header">
+            CryptoBeeple #50
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.67Ꜩ,<br/>avail. at 25.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25198" target="_blank">
+          <img src="../token_thumbs/25198.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25198" target="_blank" class="header">
+            CryptoBeeple #51
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 51.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25206" target="_blank">
+          <img src="../token_thumbs/25206.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25206" target="_blank" class="header">
+            CryptoBeeple #52
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 4.47Ꜩ,<br/>avail. at 1111.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25214" target="_blank">
+          <img src="../token_thumbs/25214.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25214" target="_blank" class="header">
+            CryptoBeeple #53
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 53.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25227" target="_blank">
+          <img src="../token_thumbs/25227.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25227" target="_blank" class="header">
+            CryptoBeeple #54
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 3.47Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25245" target="_blank">
+          <img src="../token_thumbs/25245.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25245" target="_blank" class="header">
+            CryptoBeeple #55
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25284" target="_blank">
+          <img src="../token_thumbs/25284.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25284" target="_blank" class="header">
+            CryptoBeeple #57
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 57.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25619" target="_blank">
+          <img src="../token_thumbs/25619.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25619" target="_blank" class="header">
+            CryptoBeeple #58
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25683" target="_blank">
+          <img src="../token_thumbs/25683.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25683" target="_blank" class="header">
+            CryptoBeeple #59
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 3.97Ꜩ,<br/>avail. at 45.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25718" target="_blank">
+          <img src="../token_thumbs/25718.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25718" target="_blank" class="header">
+            CryptoBeeple #60
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.17Ꜩ,<br/>avail. at 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25940" target="_blank">
+          <img src="../token_thumbs/25940.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25940" target="_blank" class="header">
+            CryptoBeeple #62
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 62.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25983" target="_blank">
+          <img src="../token_thumbs/25983.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25983" target="_blank" class="header">
+            CryptoBeeple #63
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ,<br/>avail. at 85.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25992" target="_blank">
+          <img src="../token_thumbs/25992.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25992" target="_blank" class="header">
+            CryptoBeeple #64
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.17Ꜩ,<br/>avail. at 60.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26003" target="_blank">
+          <img src="../token_thumbs/26003.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26003" target="_blank" class="header">
+            CryptoBeeple #65
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 65.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26030" target="_blank">
+          <img src="../token_thumbs/26030.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26030" target="_blank" class="header">
+            CryptoBeeple #66
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.17Ꜩ,<br/>avail. at 666.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26069" target="_blank">
+          <img src="../token_thumbs/26069.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26069" target="_blank" class="header">
+            CryptoBeeple #67
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 6.20Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26079" target="_blank">
+          <img src="../token_thumbs/26079.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26079" target="_blank" class="header">
+            CryptoBeeple #68
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 68.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26088" target="_blank">
+          <img src="../token_thumbs/26088.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26088" target="_blank" class="header">
+            CryptoBeeple #69
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.17Ꜩ,<br/>avail. at 6969.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26095" target="_blank">
+          <img src="../token_thumbs/26095.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26095" target="_blank" class="header">
+            CryptoBeeple #70
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.47Ꜩ,<br/>avail. at 777.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26106" target="_blank">
+          <img src="../token_thumbs/26106.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26106" target="_blank" class="header">
+            CryptoBeeple #71
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 710.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26119" target="_blank">
+          <img src="../token_thumbs/26119.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26119" target="_blank" class="header">
+            CryptoBeeple #72
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.17Ꜩ,<br/>avail. at 72.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26129" target="_blank">
+          <img src="../token_thumbs/26129.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26129" target="_blank" class="header">
+            CryptoBeeple #73
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 73.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26134" target="_blank">
+          <img src="../token_thumbs/26134.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26134" target="_blank" class="header">
+            CryptoBeeple #74
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.47Ꜩ,<br/>avail. at 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26140" target="_blank">
+          <img src="../token_thumbs/26140.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26140" target="_blank" class="header">
+            CryptoBeeple #75
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 75.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26147" target="_blank">
+          <img src="../token_thumbs/26147.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26147" target="_blank" class="header">
+            CryptoBeeple #76
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 55.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26154" target="_blank">
+          <img src="../token_thumbs/26154.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26154" target="_blank" class="header">
+            CryptoBeeple #77
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.77Ꜩ,<br/>avail. at 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26157" target="_blank">
+          <img src="../token_thumbs/26157.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26157" target="_blank" class="header">
+            CryptoBeeple #78
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 3.97Ꜩ,<br/>avail. at 420.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26167" target="_blank">
+          <img src="../token_thumbs/26167.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26167" target="_blank" class="header">
+            CryptoBeeple #79
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.77Ꜩ,<br/>avail. at 49.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26173" target="_blank">
+          <img src="../token_thumbs/26173.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26173" target="_blank" class="header">
+            CryptoBeeple #80
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 3.27Ꜩ,<br/>avail. at 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26182" target="_blank">
+          <img src="../token_thumbs/26182.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26182" target="_blank" class="header">
+            CryptoBeeple #82
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26588" target="_blank">
+          <img src="../token_thumbs/26588.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26588" target="_blank" class="header">
+            CryptoBeeple #83
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26621" target="_blank">
+          <img src="../token_thumbs/26621.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26621" target="_blank" class="header">
+            CryptoBeeple #84
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.17Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26718" target="_blank">
+          <img src="../token_thumbs/26718.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26718" target="_blank" class="header">
+            CryptoBeeple #85
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26735" target="_blank">
+          <img src="../token_thumbs/26735.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26735" target="_blank" class="header">
+            CryptoBeeple #86
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 70.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26748" target="_blank">
+          <img src="../token_thumbs/26748.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26748" target="_blank" class="header">
+            CryptoBeeple #87
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 15.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26877" target="_blank">
+          <img src="../token_thumbs/26877.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26877" target="_blank" class="header">
+            CryptoBeeple #88
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 7.11Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26892" target="_blank">
+          <img src="../token_thumbs/26892.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26892" target="_blank" class="header">
+            CryptoBeeple #89
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 150.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26954" target="_blank">
+          <img src="../token_thumbs/26954.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26954" target="_blank" class="header">
+            CryptoBeeple #90
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.27Ꜩ,<br/>avail. at 45.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26967" target="_blank">
+          <img src="../token_thumbs/26967.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26967" target="_blank" class="header">
+            CryptoBeeple #91
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.77Ꜩ,<br/>avail. at 17.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27002" target="_blank">
+          <img src="../token_thumbs/27002.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27002" target="_blank" class="header">
+            CryptoBeeple #92
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.27Ꜩ,<br/>avail. at 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27016" target="_blank">
+          <img src="../token_thumbs/27016.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27016" target="_blank" class="header">
+            CryptoBeeple #93
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 19.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27025" target="_blank">
+          <img src="../token_thumbs/27025.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27025" target="_blank" class="header">
+            CryptoBeeple #94
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 15.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27032" target="_blank">
+          <img src="../token_thumbs/27032.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27032" target="_blank" class="header">
+            CryptoBeeple #95
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 69.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27043" target="_blank">
+          <img src="../token_thumbs/27043.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27043" target="_blank" class="header">
+            CryptoBeeple #96
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 25.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27047" target="_blank">
+          <img src="../token_thumbs/27047.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27047" target="_blank" class="header">
+            CryptoBeeple #97
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.67Ꜩ,<br/>avail. at 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27080" target="_blank">
+          <img src="../token_thumbs/27080.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27080" target="_blank" class="header">
+            CryptoBeeple #98
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 98.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27696" target="_blank">
+          <img src="../token_thumbs/27696.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27696" target="_blank" class="header">
+            CryptoBeeple #99
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ,<br/>avail. at 9.90Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27723" target="_blank">
+          <img src="../token_thumbs/27723.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27723" target="_blank" class="header">
+            CryptoBeeple #100
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 1337.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27761" target="_blank">
+          <img src="../token_thumbs/27761.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27761" target="_blank" class="header">
+            CryptoBeeple #101
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 20.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27820" target="_blank">
+          <img src="../token_thumbs/27820.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27820" target="_blank" class="header">
+            CryptoBeeple #102
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27864" target="_blank">
+          <img src="../token_thumbs/27864.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27864" target="_blank" class="header">
+            CryptoBeeple #103
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 12.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/27983" target="_blank">
+          <img src="../token_thumbs/27983.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27983" target="_blank" class="header">
+            CryptoBeeple #105
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 50.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28015" target="_blank">
+          <img src="../token_thumbs/28015.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28015" target="_blank" class="header">
+            CryptoBeeple #106
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28058" target="_blank">
+          <img src="../token_thumbs/28058.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28058" target="_blank" class="header">
+            CryptoBeeple #107
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28093" target="_blank">
+          <img src="../token_thumbs/28093.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28093" target="_blank" class="header">
+            CryptoBeeple #108
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28128" target="_blank">
+          <img src="../token_thumbs/28128.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28128" target="_blank" class="header">
+            CryptoBeeple #109
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ,<br/>avail. at 6.90Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28139" target="_blank">
+          <img src="../token_thumbs/28139.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28139" target="_blank" class="header">
+            CryptoBeeple #110
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28951" target="_blank">
+          <img src="../token_thumbs/28951.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28951" target="_blank" class="header">
+            CryptoBeeple #111
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28970" target="_blank">
+          <img src="../token_thumbs/28970.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28970" target="_blank" class="header">
+            CryptoBeeple #112
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 12.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28976" target="_blank">
+          <img src="../token_thumbs/28976.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28976" target="_blank" class="header">
+            CryptoBeeple #113
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 2.97Ꜩ,<br/>avail. at 77.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/28985" target="_blank">
+          <img src="../token_thumbs/28985.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28985" target="_blank" class="header">
+            CryptoBeeple #114
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 4.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29033" target="_blank">
+          <img src="../token_thumbs/29033.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29033" target="_blank" class="header">
+            CryptoBeeple #115
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29046" target="_blank">
+          <img src="../token_thumbs/29046.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29046" target="_blank" class="header">
+            CryptoBeeple #116
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29062" target="_blank">
+          <img src="../token_thumbs/29062.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29062" target="_blank" class="header">
+            CryptoBeeple #117
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29111" target="_blank">
+          <img src="../token_thumbs/29111.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29111" target="_blank" class="header">
+            CryptoBeeple #119
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ,<br/>avail. at 11.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29127" target="_blank">
+          <img src="../token_thumbs/29127.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29127" target="_blank" class="header">
+            CryptoBeeple #120
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29146" target="_blank">
+          <img src="../token_thumbs/29146.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29146" target="_blank" class="header">
+            CryptoBeeple #121
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29713" target="_blank">
+          <img src="../token_thumbs/29713.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29713" target="_blank" class="header">
+            CryptoBeeple #122
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.47Ꜩ,<br/>avail. at 4.44Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29739" target="_blank">
+          <img src="../token_thumbs/29739.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29739" target="_blank" class="header">
+            CryptoBeeple #123
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ,<br/>avail. at 12.30Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-42" data-percent="50">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30046" target="_blank">
+          <img src="../token_thumbs/30046.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30046" target="_blank" class="header">
+            CryptoBeeple #125
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30054" target="_blank">
+          <img src="../token_thumbs/30054.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30054" target="_blank" class="header">
+            CryptoBeeple #126
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30156" target="_blank">
+          <img src="../token_thumbs/30156.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30156" target="_blank" class="header">
+            CryptoBeeple #127
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 1.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/30790" target="_blank">
+          <img src="../token_thumbs/30790.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30790" target="_blank" class="header">
+            CryptoBeeple #128
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          Every CryptoBeeple is unique and single edition 1/1. Enjoy it.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 1 &times; 0.97Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-42" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-42" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#43</div> CryptoBeeple</h1><a href="https://twitter.com/CryptoBeeple" target="_blank"><i class="twitter icon"></i>CryptoBeeple</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1dHvFNZn4s6mmpLqHSic5AjTXn926ZtYfh" target="_blank"><i class="circle outline icon"></i> tz1dHvFNZn4s6mmpLqHSic5AjTXn926ZtYfh</a></div><div class="ui horizontal statistic"><div class="value">148 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-42").sticky({context: "#sticky-parent-42", offset: 40});$(".progress-42").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-43"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27409" target="_blank">
+          <img src="../token_thumbs/27409.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27409" target="_blank" class="header">
+            b02
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Link
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 14 &times; 10.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-43" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/27791" target="_blank">
+          <img src="../token_thumbs/27791.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/27791" target="_blank" class="header">
+            B03
+        </a>
+        <div class="meta">
+          <span class="date">April 09, 2021</span>
+        </div>
+        <div class="description">
+          Eternal Loop
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 5.00Ꜩ,<br/>avail. at 5.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-43" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-43" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#44</div> RYZ</h1><a href="https://twitter.com/adzrozanski" target="_blank"><i class="twitter icon"></i>adzrozanski</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1bjhoK4xKXm7afQrKHoY2BdhbURyH3LiGn" target="_blank"><i class="circle outline icon"></i> tz1bjhoK4xKXm7afQrKHoY2BdhbURyH3LiGn</a></div><div class="ui horizontal statistic"><div class="value">147 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-43").sticky({context: "#sticky-parent-43", offset: 40});$(".progress-43").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-44"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/28918" target="_blank">
+          <img src="../token_thumbs/28918.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28918" target="_blank" class="header">
+            malch-us
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          malch-us, one of the sleepers. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 3.00Ꜩ,<br/>avail. at 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-44" data-percent="90">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29273" target="_blank">
+          <img src="../token_thumbs/29273.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29273" target="_blank" class="header">
+            s-c-r-e-a-m
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          the first nft I started working on.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 1.00Ꜩ,<br/>avail. at 80.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-44" data-percent="90">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29286" target="_blank">
+          <img src="../token_thumbs/29286.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29286" target="_blank" class="header">
+            f-frog
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          i interpret everything from my own perspective. but a frog. can be a f-frog ? 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-44" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29324" target="_blank">
+          <img src="../token_thumbs/29324.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29324" target="_blank" class="header">
+            beelzebub
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          if Satan drives out Satan, he is divided against himself.  "beelzebub" one of the sins. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 10 &times; 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-44" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29479" target="_blank">
+          <img src="../token_thumbs/29479.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29479" target="_blank" class="header">
+            lab-our
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          labor or "lab-our" what is it? with my brushes.. i try to express what i cannot express with words.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 12 &times; 0.50Ꜩ,<br/>avail. at 0.50Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-44" data-percent="24">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29690" target="_blank">
+          <img src="../token_thumbs/29690.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29690" target="_blank" class="header">
+            se-raph
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          it always protects the most important.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 3.00Ꜩ,<br/>avail. at 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-44" data-percent="47">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/30885" target="_blank">
+          <img src="../token_thumbs/30885.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/30885" target="_blank" class="header">
+            life is
+        </a>
+        <div class="meta">
+          <span class="date">April 12, 2021</span>
+        </div>
+        <div class="description">
+          life is.. i guess it's suck.. but it's quite variable.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-44" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/32050" target="_blank">
+          <img src="../token_thumbs/32050.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/32050" target="_blank" class="header">
+            the mouse
+        </a>
+        <div class="meta">
+          <span class="date">April 13, 2021</span>
+        </div>
+        <div class="description">
+          "the mouse" can build its own world. it can even create its dreams. mouse can see. everything.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 4 &times; 3.00Ꜩ,<br/>avail. at 3.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-44" data-percent="20">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-44" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#45</div> k-art</h1><a href="https://twitter.com/kartjust" target="_blank"><i class="twitter icon"></i>kartjust</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1dW8Th6Szc1hTxAYuXN4NvfaAqY2E71PGn" target="_blank"><i class="circle outline icon"></i> tz1dW8Th6Szc1hTxAYuXN4NvfaAqY2E71PGn</a></div><div class="ui horizontal statistic"><div class="value">147 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-44").sticky({context: "#sticky-parent-44", offset: 40});$(".progress-44").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-45"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/25134" target="_blank">
+          <img src="../token_thumbs/25134.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25134" target="_blank" class="header">
+            HIC First Edition Card
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          First edition of a series of cards based on the tezos blockchain and HIC achievements.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 50 &times; 1.00Ꜩ,<br/>avail. at 13.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-45" data-percent="89">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/25827" target="_blank">
+          <img src="../token_thumbs/25827.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25827" target="_blank" class="header">
+            HIC CARD #002
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          First edition of a series of cards based on the tezos blockchain and HIC achievements. Achievement: being the objkt 666 and using it to display a Devil. Issuer: tz1ZdMfzmWLb8mu22jE7rZ8Y3t9iKezM68cq
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 37 &times; 1.89Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-45" data-percent="71">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label"><i class="play circle outline icon"></i></div>
+        <a href="https://www.hicetnunc.xyz/objkt/26087" target="_blank">
+          <img src="../token_thumbs/26087.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26087" target="_blank" class="header">
+            HIC CARD #003
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          3rd edition of a series of cards based on the tezos blockchain and HIC achievements. Achievement: The reason why Hic et Nunc rebranded.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 45 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-45" data-percent="88">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-45" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#46</div> Narcosis</h1><a href="https://twitter.com/_cryptonarc" target="_blank"><i class="twitter icon"></i>_cryptonarc</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1VWjtVznmECbMvPbhvhznGtt3uBGUjwhRg" target="_blank"><i class="circle outline icon"></i> tz1VWjtVznmECbMvPbhvhznGtt3uBGUjwhRg</a></div><div class="ui horizontal statistic"><div class="value">144 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-45").sticky({context: "#sticky-parent-45", offset: 40});$(".progress-45").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-46"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">SVG</div>
+        <a href="https://www.hicetnunc.xyz/objkt/29780" target="_blank">
+          <img src="../token_thumbs/29780.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29780" target="_blank" class="header">
+            svg2.svg
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          Code is wings.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 8 &times; 20.62Ꜩ,<br/>avail. at 33.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-46" data-percent="88">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-46" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#47</div> ertdfgcvb</h1><a href="https://twitter.com/andreasgysin" target="_blank"><i class="twitter icon"></i>andreasgysin</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1dEF5ZMTnBSkz2ZQPvpJjwyfeUUyGjeMtf" target="_blank"><i class="circle outline icon"></i> tz1dEF5ZMTnBSkz2ZQPvpJjwyfeUUyGjeMtf</a></div><div class="ui horizontal statistic"><div class="value">144 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-46").sticky({context: "#sticky-parent-46", offset: 40});$(".progress-46").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-47"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/26271" target="_blank">
+          <img src="../token_thumbs/26271.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26271" target="_blank" class="header">
+            META THUMB
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          In the slumber above the heap of over warmed dark matter . https://twitter.com/ilan_katin
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 29 &times; 3.00Ꜩ,<br/>avail. at 35.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-47" data-percent="93">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">GIF</div>
+        <a href="https://www.hicetnunc.xyz/objkt/28689" target="_blank">
+          <img src="../token_thumbs/28689.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28689" target="_blank" class="header">
+            CHADLECTRIC MUSHROOM
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          mosculoor posture approaches a funk fungus and they fall for the charges
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 29 &times; 3.00Ꜩ,<br/>avail. at 14.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-47" data-percent="90">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-47" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#48</div> ilan katin</h1><a href="https://twitter.com/ilan_katin" target="_blank"><i class="twitter icon"></i>ilan_katin</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1TiHJ3uu3sW578NuT1AQpjmGPCgL2SSzUo" target="_blank"><i class="circle outline icon"></i> tz1TiHJ3uu3sW578NuT1AQpjmGPCgL2SSzUo</a></div><div class="ui horizontal statistic"><div class="value">143 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-47").sticky({context: "#sticky-parent-47", offset: 40});$(".progress-47").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-48"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">SVG</div>
+        <a href="https://www.hicetnunc.xyz/objkt/25759" target="_blank">
+          <img src="../token_thumbs/25759.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25759" target="_blank" class="header">
+            V/PACK-01-02
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          Generative compositions based on bin packing, series 01, iteration 02. 6 different modes selectable from the dots, swipe left/right to cycle through modes on touch devices.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 29 &times; 4.41Ꜩ,<br/>avail. at 100.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-48" data-percent="93">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        <div class="ui right corner large label" style="text-align: right; padding-right: 5px; padding-top: 7px">SVG</div>
+        <a href="https://www.hicetnunc.xyz/objkt/28211" target="_blank">
+          <img src="../token_thumbs/28211.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/28211" target="_blank" class="header">
+            V/RADIO-01-01
+        </a>
+        <div class="meta">
+          <span class="date">April 10, 2021</span>
+        </div>
+        <div class="description">
+          Interactive interpretation of the chart that inspired many. Series 01, iteration 01, made by @voorbeeld. Use mouse or touch on field. Swipe left/right to switch modes or click on the numbered dots at the bottom to select any of the 6 modes.
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 34 &times; 2.00Ꜩ,<br/>avail. at 2.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-48" data-percent="85">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-48" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#49</div> voorbeeld</h1><a href="https://twitter.com/voorbeeld" target="_blank"><i class="twitter icon"></i>voorbeeld</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1TNtDa487UmKbAvAD8Q3GCWRuLTS1r1B16" target="_blank"><i class="circle outline icon"></i> tz1TNtDa487UmKbAvAD8Q3GCWRuLTS1r1B16</a></div><div class="ui horizontal statistic"><div class="value">142 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-48").sticky({context: "#sticky-parent-48", offset: 40});$(".progress-48").progress(); </script><div style="display: flex; min-height: 300px; position: relative" id="sticky-parent-49"><div class="ui three doubling cards" style="flex-grow: 1; margin-right: 15px">
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/25676" target="_blank">
+          <img src="../token_thumbs/25676.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/25676" target="_blank" class="header">
+            Fitness, 2020
+        </a>
+        <div class="meta">
+          <span class="date">April 07, 2021</span>
+        </div>
+        <div class="description">
+          css animation
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 14 &times; 1.00Ꜩ,<br/>avail. at 1.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-49" data-percent="14">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/26021" target="_blank">
+          <img src="../token_thumbs/26021.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/26021" target="_blank" class="header">
+            Strobo, 2017
+        </a>
+        <div class="meta">
+          <span class="date">April 08, 2021</span>
+        </div>
+        <div class="description">
+          Danger! Flashing lights! Click top for less, bottom for more. 
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 7 &times; 7.00Ꜩ,<br/>avail. at 200.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-49" data-percent="87">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29113" target="_blank">
+          <div style="width: 256px; height: 256px; text-align: center; padding-top: 110px">click to view on hicetnunc.xyz</div>
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29113" target="_blank" class="header">
+            Deathstar, 2017
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+           		const k = d => { 			d = Math.ceil(d * 0.037 * 0.5) * 4; 			const f = new Array(d).fill(0).map((e, i) => (i % 2 === 1 ? Math.cos : Math.sin)(Math.PI * 2 / d * Math.ceil((i + 1) * .5) * 2) * (i % 4 < 2 ? .3 : .7)); 			path.setAttribute("d", `M${f[0]} ${f[1]}L${f}`); 			requestAnimationFrame(k); 		} 		requestAnimationFrame(k); 		svg.addEventListener("click", () => location.reload());
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 3 &times; 7.00Ꜩ,<br/>avail. at 7.00Ꜩ
+      </div>
+      <div class="ui bottom attached green progress progress-49" data-percent="3">
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div class="ui card">
+      <div class="image">
+        
+        <a href="https://www.hicetnunc.xyz/objkt/29944" target="_blank">
+          <img src="../token_thumbs/29944.jpeg" style="height: 256px; width: 100%; object-fit: scale-down;">
+        </a>
+      </div>
+      <div class="content">
+        <a href="https://www.hicetnunc.xyz/objkt/29944" target="_blank" class="header">
+            DripDrop
+        </a>
+        <div class="meta">
+          <span class="date">April 11, 2021</span>
+        </div>
+        <div class="description">
+          2019
+        </div>
+      </div>
+      <div class="extra content">
+         Sold 9 &times; 9.90Ꜩ
+      </div>
+      <div class="ui bottom attached error progress progress-49" data-percent="100">
+        <div class="bar"></div>
+      </div>
+    </div>
+    </div><div style="width: 350px; flex-grow: 0; flex-shrink: 0"><div id="sticky-49" class="ui sticky" style="padding-top: 10px"><h1 class="ui header"><div class="ui big black label" style="margin-left: 0; padding: 6px 12px">#50</div> Leander Herzog</h1><a href="https://twitter.com/lennyjpg" target="_blank"><i class="twitter icon"></i>lennyjpg</a><br/><div style="margin-top: 7px"><a href="http://hicetnunc.xyz/tz/tz1i7fDupvRU8AWoQgPtqJvKivXnyvuvTLYN" target="_blank"><i class="circle outline icon"></i> tz1i7fDupvRU8AWoQgPtqJvKivXnyvuvTLYN</a></div><div class="ui horizontal statistic"><div class="value">140 ꜩ</div><div class="label">value of sold works</div></div></div></div></div><div class="ui divider"></div><script> $("#sticky-49").sticky({context: "#sticky-parent-49", offset: 40});$(".progress-49").progress(); </script><div class="ui ten item menu"><a class="item" style="" href="./index.html">1&ndash;10</a><a class="item" style="" href="./page_1.html">11&ndash;20</a><a class="item" style="" href="./page_2.html">21&ndash;30</a><a class="item" style="" href="./page_3.html">31&ndash;40</a><a class="item active" style="" href="./page_4.html">41&ndash;50</a><a class="item" style="" href="./page_5.html">51&ndash;60</a><a class="item" style="" href="./page_6.html">61&ndash;70</a><a class="item" style="" href="./page_7.html">71&ndash;80</a><a class="item" style="" href="./page_8.html">81&ndash;90</a><a class="item" style="" href="./page_9.html">91&ndash;100</a></div><div style="height: 50px"></div></body>
